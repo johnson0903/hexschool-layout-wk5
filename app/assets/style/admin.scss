@@ -1,0 +1,9 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import './helpers/variables';
+
+.btn-add-admin {
+  padding: 0;
+  span {
+    color: $primary;
+  }
+}
