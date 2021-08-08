@@ -1,0 +1,21 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import './layout/index.scss';
+
+.app-nav {
+  height: 100vh;
+  width: 23.125%;
+  padding: 32px;
+  background-color: $gray-100;
+
+  .logo-link {
+    display: block;
+    margin-bottom: 32px;
+  }
+  .nav-link {
+    padding-left: 0;
+  }
+}
