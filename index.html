@@ -1,10 +1,76 @@
----
-title: Admin
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<link rel="stylesheet" href="./assets/style/admin.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Admin
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="app-nav">
+    <a href="/" class="logo-link">
+      <img src="./assets/images/logo-ANSWER.svg" alt="">
+    </a>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">
+          <span class="material-icons me-3">
+            assessment
+          </span>
+          Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="material-icons me-3">
+            question_answer
+          </span>
+          Question
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="material-icons me-3">
+            assignment
+          </span>
+          Assignment
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="material-icons me-3">
+            video_library
+          </span>
+          Course
+        </a>
+      </li>
+      <li class="nav-item nav-item__admin">
+        <a class="nav-link" href="#">
+          <span class="material-icons me-3">
+            people
+          </span>
+          Admin
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span class="material-icons me-3">
+            settings
+          </span>
+          Settings
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <link rel="stylesheet" href="./assets/style/admin.css">
 <main>
   <header class="d-flex align-items-center mb-3 ">
     <h2 class="header__title me-5 fw-bold">Admin</h2>
@@ -182,3 +248,10 @@ current: index
 <script>
   document.querySelector(".nav-item__admin").classList.add("active");
 </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
