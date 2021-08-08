@@ -6,8 +6,8 @@ current: index
 ---
 <link rel="stylesheet" href="./assets/style/admin.css">
 <main>
-  <header class="d-flex align-items-center mb-3">
-    <h2 class="me-5">Admin</h2>
+  <header class="d-flex align-items-center mb-3 ">
+    <h2 class="header__title me-5 fw-bold">Admin</h2>
     <a class="btn btn-add-admin d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-new-admin">
       <span class="material-icons me-2"> add </span>
       Add New Admin
@@ -50,9 +50,9 @@ current: index
             </span>
           </button>
           <button class="btn"><span class="material-icons">
-            edit
-          </span>
-        </button>
+              edit
+            </span>
+          </button>
         </td>
       </tr>
       <tr>
@@ -66,9 +66,9 @@ current: index
             </span>
           </button>
           <button class="btn"><span class="material-icons">
-            edit
-          </span>
-        </button>
+              edit
+            </span>
+          </button>
         </td>
       </tr>
       <tr>
@@ -82,9 +82,9 @@ current: index
             </span>
           </button>
           <button class="btn"><span class="material-icons">
-            edit
-          </span>
-        </button>
+              edit
+            </span>
+          </button>
         </td>
       </tr>
       <tr>
@@ -98,9 +98,9 @@ current: index
             </span>
           </button>
           <button class="btn"><span class="material-icons">
-            edit
-          </span>
-        </button>
+              edit
+            </span>
+          </button>
         </td>
       </tr>
       <tr>
@@ -114,13 +114,32 @@ current: index
             </span>
           </button>
           <button class="btn"><span class="material-icons">
-            edit
-          </span>
-        </button>
+              edit
+            </span>
+          </button>
         </td>
       </tr>
     </tbody>
   </table>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item"><a class="page-link prev" href="#">
+          <span class="material-icons">
+            navigate_before
+          </span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link before" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link next" href="#">
+          <span class="material-icons">
+            navigate_next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
   <div class="modal fade" id="modal-new-admin" tabindex="-1" aria-labelledby="modal-new-admin" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -160,3 +179,6 @@ current: index
     </div>
   </div>
 </main>
+<script>
+  document.querySelector(".nav-item__admin").classList.add("active");
+</script>
