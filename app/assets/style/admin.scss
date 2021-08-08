@@ -1,9 +1,43 @@
 @import "../../../node_modules/bootstrap/scss/functions";
-@import './helpers/variables';
+@import "./helpers/variables";
 
+header {
+  height: 93px;
+}
 .btn-add-admin {
   padding: 0;
   span {
     color: $primary;
+  }
+}
+
+.header__tools {
+  margin-left: auto;
+  gap: 24px;
+  .material-icons {
+    color: $gray-900;
+  }
+}
+
+#modal-new-admin {
+  .modal-header {
+    padding: 32px;
+    border-bottom: none;
+  }
+  .modal-body {
+    padding: 0;
+    margin: 0 32px 32px 32px;
+  }
+  input {
+    border: 1px solid $gray-900;
+  }
+  fieldset {
+    border-bottom: 1px solid $gray-400;
+  }
+  .verify-status {
+    margin-bottom: 18px;
+  }
+  #btn-verification {
+    border: 1px solid $gray-400;
   }
 }
