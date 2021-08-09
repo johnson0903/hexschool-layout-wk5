@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="app-nav">
+  <nav class="app-nav d-flex flex-column">
     <a href="./index.html" class="logo-link">
       <img src="./assets/images/logo-ANSWER.svg" alt="">
     </a>
@@ -69,9 +69,17 @@
         </a>
       </li>
     </ul>
+
+    <div class="profile d-flex mt-auto">
+      <img class="avatar me-3" src="./assets/images/profile.jpg" alt="">
+      <div class="profile__info">
+        <div class="name fw-bold">Andy Chen</div>
+        <div class="email">andy0401@mail.com</div>
+      </div>
+    </div>
   </nav>
   <link rel="stylesheet" href="./assets/style/admin.css">
-<main>
+<main class="d-flex flex-column">
   <header class="d-flex align-items-center mb-3 ">
     <h2 class="header__title me-5 fw-bold">Admin</h2>
     <a class="btn btn-add-admin d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modal-new-admin">
@@ -185,9 +193,89 @@
           </button>
         </td>
       </tr>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <button class="btn"><span class="material-icons">
+              visibility
+            </span>
+          </button>
+          <button class="btn"><span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <button class="btn"><span class="material-icons">
+              visibility
+            </span>
+          </button>
+          <button class="btn"><span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <button class="btn"><span class="material-icons">
+              visibility
+            </span>
+          </button>
+          <button class="btn"><span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <button class="btn"><span class="material-icons">
+              visibility
+            </span>
+          </button>
+          <button class="btn"><span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <button class="btn"><span class="material-icons">
+              visibility
+            </span>
+          </button>
+          <button class="btn"><span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
     </tbody>
   </table>
-  <nav aria-label="Page navigation example">
+  <nav class="mt-auto" aria-label="Page navigation example">
     <ul class="pagination justify-content-end">
       <li class="page-item"><a class="page-link prev" href="#">
           <span class="material-icons">
@@ -234,6 +322,46 @@
               </div>
               <input type="button" id="btn-verification" class="btn btn-outline-primary w-100 fw-bold py-3"
                 value="Send Verification Mail">
+            </fieldset>
+            <fieldset class="mb-3 pb-4">
+              <legend>Access Level</legend>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>-Choose access level-</option>
+                <option value="1">Admin</option>
+              </select>
+            </fieldset>
+            <fieldset class="mb-3 pb-4">
+              <legend>Custom Access</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="lecture">
+                <label class="form-check-label" for="lecture">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="coupon">
+                <label class="form-check-label" for="coupon">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="message">
+                <label class="form-check-label" for="message">
+                  Message
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="setting">
+                <label class="form-check-label" for="setting">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="task-menu">
+                <label class="form-check-label" for="task-menu">
+                  Task Menu
+                </label>
+              </div>
             </fieldset>
           </form>
         </div>
